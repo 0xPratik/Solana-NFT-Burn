@@ -1,9 +1,5 @@
 const Minters = [
   {
-    mint: "9iSD3wkC1aq3FcwgjJfEua9FkkZJWv7Cuxs6sKjc3VnR",
-    holder: "9iSD3wkC1aq3FcwgjJfEua9FkkZJWv7Cuxs6sKjc3VnR",
-  },
-  {
     mint: "ES9DRHdPeKLvsKWr8Q81KWurUQujiFUMQNzXdqp8PrQ9",
     holder: "7ZUdyHHmJLwYECSHUvPT1etgB3BaDmpHC7wT9FF2LuiY",
   },
