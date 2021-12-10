@@ -7,11 +7,12 @@ import { Keypair, SystemProgram, Transaction } from "@solana/web3.js";
 import { Token, TOKEN_PROGRAM_ID } from "@solana/spl-token";
 import Minter from "../../List";
 import Form from "../form";
+import Burn from "../Burn/index";
 import { publicKey } from "@project-serum/anchor/dist/cjs/utils";
 
 export default function Main() {
   const [isMinter, setIsMinter] = useState<boolean>(false);
-  const { publicKey, sendTransaction } = useWallet();
+  const { publicKey, sendTransaction, wallets } = useWallet();
 
   useEffect(() => {
     const address = publicKey?.toString();
@@ -42,6 +43,9 @@ export default function Main() {
       </Flex>
       <Box>
         <Heading>{isMinter ? <Form /> : "Sorry you are not a minter"}</Heading>
+      </Box>
+      <Box bg="teal.400">
+        <Burn />
       </Box>
     </Box>
   );
