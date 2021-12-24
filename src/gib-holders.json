@@ -1,4 +1,4 @@
-const Minters = {
+{
 	"GPucN2ZbZ1qvABgmNxGp2d2KSz2sGCWXXm6EuxG7Bb5R": {
 		"amount": 1,
 		"mints": [
@@ -12,5 +12,3 @@ const Minters = {
 		]
 	}
 }
-
-export default Minters;
